@@ -1,0 +1,42 @@
+Paper link: https://drive.google.com/file/d/0B4T0-Ia20_9ZTFNEVkR6X1dqTkE/view
+
+# Multiple choice
+*1. In trying to predict boxing matches by matching to the nearest exemplar, we have two exemplars:
+      1. Opponent height - 185cm. Opponent weight - 90kg. Result - I won.
+      2. Opponent height - 180cm. Opponent weight - 95kg. Result - I lost.
+    The question is:
+      1. Opponent height - 185cm. Opponent weight - 94kg. Will I win?
+    We predict by Hamming distance to the nearest exemeplar, (a) with height in cm, (b) with height in m. What does it predict?
+      1. (a) I win, (b) I lose.
+      2. (a) I win, (b) I win.
+      3. (a) I lose, (b) I lose.
+      4. (a) I lose, (b) I win.*
+##Answer:
+    (a) Hamming distance in m -   1. 1 + 4 = 5 -> I win
+                                  2. 5 + 1 = 6
+    (b) Hamming distance in cm -  1. 0.01 + 4 = 4.01
+                                  2. 0.05 + 1 = 1.05 -> I lose
+    1. (a) I win, (b) I lose.
+    
+*2. One of these is not a property of neural networks:
+    1. It can be used to represent a function from real-valued multi-dimensional input to real-valued multi-dimensional output.
+    2. It can be used to represent a function form real-calued single-dimensional input to real-valued single-dimensional output.
+    3. It can be used to represent a function from integer-valued multi-dimensional input to integer-valued multi-dimensional output.
+    4. Given a network architecture, an Input leads to an Output after a fixed number of calculations.
+    5. As learning progresses, the size of the network remains fixed.
+    6. Input is compared to previous Input, and "nearby" Input should produce "nearby" Output.
+    7. It can be used to represent any normal non-linear, continuous, non-chaotic function.
+    8. It can be used to represent any normal linear, continuous, non-chaotic function. *
+##Answer:
+    5. As learning progresses, the size of the network remains fixed.
+    
+*3. We are learning to represent a function Q(x). The input x is a 100 dimensional vector. Each dimension is an integer from 1 to 10. One approach to representing this function would be to have a "lookup table" or array of entries, where we have one entry Q(x) for each input x. This array would be initially blank and we would fill it in by learning. THe size of the array is:
+    1. 10
+    2. 100
+    3. 110
+    4. 1000
+    5. 1010
+    6. 10 ^ 100
+    7. 100 ^ 10*
+##Answer:
+    3. 110
